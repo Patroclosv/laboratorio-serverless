@@ -1,0 +1,17 @@
+{
+    "nombre": "Francisco Javier",
+    "apellido": "Serrano Acevedo",
+    "email": "javier22cer@gmail.com",
+    "token": "69384f6b-6fe0-4393-8a12-67512f2a3dd0",
+    "fecha_utc": "2026-11-16T04:21:39.494024+00:00",
+    "sistema_operativo": "Linux",
+    "version_so": "6.18.58.1-microsoft-standard-WSL2",
+    "arquitectura": "x86_64",
+    "procesador": "",
+    "version_python": "3.12.16",
+    "hostname_contenedor": "053a431b4d4c",
+    "plataforma": "OpenFaaS",
+    "funcion": "registro-serverless",
+    "estado": "Ejecucion exitosa",
+    "firma_sha256": "da6af77d9567aef25aa16c3493dc98a5ac3c9482cafce717914ca576fe17592c"
+}

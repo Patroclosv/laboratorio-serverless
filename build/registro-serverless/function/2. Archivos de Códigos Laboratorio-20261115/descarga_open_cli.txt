@@ -1,0 +1,17 @@
+$ErrorActionPreference = "Stop"
+
+$version = (Invoke-RestMethod "https://api.github.com/repos/openfaas/faas-cli/releases/latest").tag_name
+
+$ruta = "$env:USERPROFILE\openfaas-bin"
+
+New-Item -ItemType Directory -Force -Path $ruta | Out-Null
+
+$url = "https://github.com/openfaas/faas-cli/releases/download/$version/faas-cli.exe"
+
+Write-Host "Descargando OpenFaaS CLI versión $version..."
+
+Invoke-WebRequest -Uri $url -OutFile "$ruta\faas-cli.exe"
+
+Write-Host "Descarga finalizada."
+
+Get-Item "$ruta\faas-cli.exe" | Select-Object Name, Length
